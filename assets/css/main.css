@@ -1,0 +1,113 @@
+:root {
+    --primary-pink: #ff85a2;
+    --soft-pink: #ffccd5;
+    --bg-pink: #fff0f3;
+    --border-pink: #ffcbd5;
+    --text-color: #5d4037;
+    --accent-pink: #f06292;
+}
+
+body {
+    background-color: var(--bg-pink);
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+    word-break: break-word;
+    background: linear-gradient(to bottom, #ffe1e7, #d2f3ff);
+}
+
+.container {
+    background-color: white;
+    max-width: 600px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 30px;
+    border: 2px solid var(--soft-pink);
+    margin: 20px;
+    box-shadow: 0 10px 25px rgba(255, 133, 162, 0.2);
+}
+
+h1 {
+    color: var(--primary-pink);
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    border-bottom: 2px dashed var(--soft-pink);
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: var(--accent-pink);
+    font-size: 1.4em;
+    margin-top: 25px;
+    margin-block-start: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: '🌸';
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+p {
+    margin: 5px 0;
+    margin-left: 5px;
+}
+
+blockquote {
+    background-color: var(--bg-pink);
+    border-left: 5px solid var(--border-pink);
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+    border-radius: 0 15px 15px 0;
+    color: var(--accent-pink);
+    font-weight: bold;
+}
+
+a {
+    color: var(--accent-pink);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary-pink);
+    text-decoration: underline;
+}
+
+.join-btn {
+    display: inline-block;
+    background-color: var(--primary-pink);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.join-btn:hover {
+    background-color: var(--accent-pink);
+    transform: translateY(-2px);
+}
+
+.footer-license {
+    margin-top: 40px;
+    font-size: 0.85em;
+    color: #9e9e9e;
+    border-top: 1px solid var(--soft-pink);
+    padding-top: 20px;
+}
+
+.decor {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
