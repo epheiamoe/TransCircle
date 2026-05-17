@@ -2,7 +2,7 @@
 
 ## 网站投稿功能
 
-计划：在 [submit.transcircle.org](submit.transcircle.org) 实现投稿表单。
+计划：在 [submit.transcircle.org](https://submit.transcircle.org) 实现投稿表单。
 
 - [ ] Serverless 投稿表单
 
