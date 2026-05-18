@@ -1,13 +1,39 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import { ThemeProvider } from "./context/ThemeContext";
-import "./index.css";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom'
+
+import App from './App'
+import Submit from './pages/Submit'
+
+import './index.css'
+
+import {
+  ThemeProvider,
+} from './context/ThemeContext'
+
+ReactDOM.createRoot(
+  document.getElementById('root')!
+).render(
+  <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<App />}
+          />
+
+          <Route
+            path="/submit"
+            element={<Submit />}
+          />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
-  </StrictMode>,
-);
+  </React.StrictMode>
+)
